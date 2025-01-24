@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(71, 68, 68);
+}
+.loginbox{
+    background: rgb(83, 205, 221);
+    width: 400px;
+    height:380px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow:2px 7px 8px -6px rgb(35, 45, 31) ;
+}
+.loginbox h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-family: arial black;
+}
+.username input{
+    background: #dbcece;
+    width: 88%;
+    padding: 12px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px; 
+}
+.username i{
+    font-size: 20px;
+}
+.password input{
+    background: #dbcece;
+    width: 88%;
+    padding: 12px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px; 
+}
+.password i{
+    font-size: 20px;
+}
+.remember-forgot  {
+   display:flex;
+   justify-content: space-between;
+   font-size: 18px;
+   margin-bottom: 20px;
+   
+
+}
+.remember-forgot a{
+    color:rgb(255, 255, 255);
+    font-size: 17px;
+    cursor: pointer;
+    margin-right:15px;
+}
+.remember-forgot a:hover{
+    color: rgb(4, 31, 31);
+    text-decoration: underline;
+    transition: .4s; 
+   
+}
+.btn button{
+    background:rgb(67, 97, 167) ;
+    width: 98%;
+    height: 50px;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 22px;
+    outline: none;
+    border: none;
+    transition: .4s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.btn button:hover{
+    background:slateblue;
+    color:white;   
+}
+.register{
+    text-align: center;
+    font-size: 20px;
+}
+.register span{
+    color: black;
+}
+.register a{
+    color:#fff;
+    cursor: pointer;
+}

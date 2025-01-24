@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: rgb(179, 203, 179);
+}
+
+
+.loginbox{
+    background: rgb(167, 158, 111);
+    width: 400px;
+    height:380px ;
+    padding:40px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 150px; 
+    box-shadow: 2px 7px 8px -6px rgb(35, 45, 31)
+   
+}
+.loginbox h2{
+    text-align: center;
+    font-size: 35px;
+    color:rgb(14, 13, 11);
+    margin-bottom: 20px;
+    font-family: 'Arial Narrow Bold';
+    text-transform: uppercase;  
+}
+.loginbox input{
+    width:90%;
+    display:block;
+    padding: 20px;
+    background: #dbcece;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    color:rgb(46, 45, 44)
+}
+.loginbtn{
+    background: rgb(167, 167, 236) !important;
+    color: white;
+    width: 100% !important;
+    
+}
+.loginbtn:hover{
+    background: wheat !important;
+    cursor: pointer;
+}
+.registerlink{
+    text-align: center;
+    font-size: 20px;
+}
+.registerlink span{
+    color: #121111;
+
+}
+.registerlink a{
+    color: white;
+    text-decoration: none;
+}
