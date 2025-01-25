@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: skyblue;
+}
+.header{
+    width:100%;
+    height: 80px;
+    background:palegoldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px  rgba(0,0,0,0.2);
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-left: 100px;
+}
+.logo span{
+    color:rgb(195, 4, 4);
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    float: left;
+    position: relative;
+}
+.menu li a{
+    text-decoration: none;
+    color:black;
+    font-size: 30px;
+    transition: 0.3s;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+}
+.menu li a:hover{
+    color:brown;
+    background: #c0d3e8;
+    transition: 0.4s
+}
+/* Adding the underline effect */
+.menu li a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #151716; 
+    transition: width 0.4s ease;
+}
+.menu li a:hover:after {
+    width: 100%;
+}
+/*Dropdown menu design*/
+.menu li ul{
+    position: absolute;
+    background:palegoldenrod;
+    list-style: none;
+    width: 200px;
+    top:100%;
+    left:0;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 10;
+    display: none;
+}
+.menu li ul li{
+    float: none;
+}
+.menu li ul li a{
+    color:black;
+    font-size: 30px;
+    padding: 15px 20px;
+}
+.menu li ul li a:hover{
+    color:brown;
+    background: #c0d3e8;
+    transition: 0.4s
+}
+/*Show the dropdown*/
+.menu li:hover > ul{
+    display: block;
+}
+/*Multiple dropdown when hovering on the parent menu */
+.menu li ul li ul{
+    position: absolute;
+    background:palegoldenrod;
+    top:0;
+    left:100%;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: none;
+}
+/*Multiple dropdown  when hovering on the parent submenu*/
+.menu li ul li:hover > ul{
+    display: block;
+}
+.fa-solid{
+    float: right;
+    margin-left: 10px;
+    padding: 3px;
+}
+/*Search Bar design*/
+.search-bar{
+    display: flex;
+    align-items: center;
+    margin-right:50px;
+}
+.search-bar form{
+    display: flex;
+    margin: 0;
+}
+.search-bar input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+.search-bar input:hover{
+    border: 1px solid #72a0d4;
+}
+.search-bar button{
+    padding: 10px;
+    background-color: #a81313;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-size: 19px;
+    cursor: pointer;
+}
+.search-bar button:hover{
+    color: black;
+    background-color:#94bae5;
+    transition: .4s;
+}
