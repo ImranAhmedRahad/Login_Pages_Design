@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+     box-sizing: border-box;
 }
 body{
     background: rgb(235, 222, 222);
@@ -19,7 +20,7 @@ body{
     border-radius: 42px;
     align-items: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    transition: 0.3s ease;
+    transition:  all 0.3s ease;
 }
 .search-bar form{
     display: flex;
@@ -35,7 +36,7 @@ body{
     transition:  0.3s ease ;
     background: transparent;
     color: white;
-    width: 80%;
+    width: 100%;
 }
 .search-btn{
     padding: 10px 20px;
@@ -45,7 +46,7 @@ body{
     font-size: 30px;
     cursor: pointer;
     background: brown;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 .search-btn:hover{
     background: salmon;
